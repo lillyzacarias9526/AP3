@@ -1,0 +1,9 @@
+<resources> <!-- clase que define los elementos que se van a utilizar en la aplicacion -->
+
+    <!-- Se definen las variables de tipo cadena que sirve como etiqueta -->
+
+    <string name="app_name">AP3</string>
+    <string name="Info">AP3 es un Widget de tipo Home Screen, no es una
+        Aplicación normal. Al tocar el Reloj se dispara un Activity.</string>
+
+</resources> <!-- Se cierra la etiqueta de recursos -->

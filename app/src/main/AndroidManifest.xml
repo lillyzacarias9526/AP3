@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--- el androidmanifiest es un archivo de configuracion donde se aplicaran las configuraciones basicas de nuestra app,
+          su configuracion podra realizarse a traves de una interfaz grafica. el androidmanifiest esta situado
+                  en la raiz de cada aplicacion -->
+
+<!--- el atributo package hace referencia al nombre del paquete que estamos creando -->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lillyzacarias.ap3">
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="16" />
+
+    <!--- aqui se inicia el contenido de la aplicacion -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" > <!---  Se Crean los componentes Iniciales dentro de la etiqueta -->
+        <receiver android:name="WidgetEventos">
+
+            <intent-filter> <!--- Agrega un nombre de categoría a un filtro de intención.  -->
+
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"
+                    />
+            </intent-filter> <!--- Se termina el intento  -->
+            <meta-data android:name="android.appwidget.provider"
+                android:resource="@xml/propiedades_del_widget" />
+        </receiver>
+        <activity android:name="Info"></activity>
+        <activity android:name="TabHostPrincipal"></activity> <!---  Se termina la actividad -->
+
+    </application> <!---  Se Termina el contenido de la aplicacion -->
+
+</manifest> <!--- Se termina el archivo manifiesto-->

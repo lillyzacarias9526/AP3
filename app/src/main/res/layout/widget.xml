@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--- Se crea el Relativelayout que es para que los widgets que estén dentro de este -->
+<!---  contenedor basarán su posición en relación con los otros elementos. -->
+
+<RelativeLayout android:id="@+id/Widget"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/fondoreloj4">
+
+    <!--- Se crea un textView que se iniciara en 0 -->
+    <!--- Los TextView son propiedades de texto que nos van a permitir personalizar nuestros Layout-->
+
+    <TextView
+        android:id="@+id/widget_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Reloj"
+        android:textColor="#ffffff"
+        android:textSize="35dip"
+        android:textStyle="bold" />
+
+    <!--- Sirve para crear un reloj analogico, aunque su personalizacion es algo complicada, es el tipo
+      de reloj mas elegante -->
+    <AnalogClock
+        android:id="@+id/analogClock1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout> <!--- Se cierra la etiqueta del Relativelayout creado -->

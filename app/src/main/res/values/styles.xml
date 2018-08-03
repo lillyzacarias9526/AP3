@@ -1,0 +1,12 @@
+<resources>  <!-- Aqui comienza una clase de recursos que es una hoja de estilos donde se definen
+                    los colores de los elemenots basicos de la aplicacion-->
+
+    <!-- Base application theme. -->
+
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+    </style>
+    <color name="fondo">#21af8a</color>
+
+</resources> <!-- Aqui termina la etiqueta de la clase -->
